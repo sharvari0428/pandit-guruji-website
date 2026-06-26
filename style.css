@@ -174,3 +174,57 @@ footer {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* =========================
+   PREMIUM PUJA CARDS UPGRADE
+========================= */
+
+.cards .card{
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212,175,55,0.2);
+  color: #fff;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.cards .card h3{
+  color: #ffd700;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.cards .card p{
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.cards .card button{
+  margin-top: 15px;
+  background: linear-gradient(45deg, #d4af37, #ffcc70);
+  color: #000;
+  font-weight: 600;
+}
+
+.cards .card:hover{
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  border-color: #d4af37;
+}
+
+/* glow effect */
+.cards .card::before{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212,175,55,0.15), transparent 60%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cards .card:hover::before{
+  opacity: 1;
+}
