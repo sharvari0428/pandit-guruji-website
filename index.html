@@ -259,18 +259,24 @@
   💬
 </a>
 <script src="script.js"></script>
-</body>
-</html>
-  <script src="script.js"></script>
-<script>
-document.querySelectorAll(".pandit-card button").forEach(btn => {
-  btn.addEventListener("click", function () {
-    const name = this.parentElement.querySelector("h3").innerText;
 
-    alert("🕉️ Checking availability for " + name + 
-    "\n\n📅 Slots will be shared on WhatsApp soon!");
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".pandit-card button").forEach(btn => {
+    btn.addEventListener("click", function () {
+
+      const card = this.closest(".pandit-card");
+      const name = card.querySelector("h3").innerText;
+
+      alert("🕉️ Checking availability for " + name +
+      "\n\n📅 Slots will be shared on WhatsApp soon!");
+
+    });
   });
+
 });
 </script>
+
 </body>
 </html>
