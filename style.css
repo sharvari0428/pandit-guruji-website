@@ -270,3 +270,50 @@ footer {
 .pandit-card:hover{
   transform: translateY(-12px) scale(1.03);
 }
+/* =========================
+   CUSTOMER REVIEWS SECTION
+========================= */
+
+.testimonials{
+  padding: 100px 8%;
+  text-align: center;
+  background: radial-gradient(circle at bottom, rgba(212,175,55,0.08), transparent 60%);
+}
+
+.testimonials h2{
+  color: #ffd700;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+
+.testimonials .card{
+  text-align: left;
+  padding: 30px;
+  position: relative;
+}
+
+.testimonials .card p{
+  font-style: italic;
+  color: #ddd;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.testimonials .card span{
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.testimonials .card::before{
+  content: "⭐";
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.testimonials .card:hover{
+  transform: translateY(-10px) scale(1.02);
+}
