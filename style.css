@@ -129,3 +129,16 @@ body{
 .stat-box p{
   color:#555;
 }
+.card p{
+  margin:15px 0;
+  color:#666;
+}
+
+.card button{
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  background:#800020;
+  color:white;
+  cursor:pointer;
+}
