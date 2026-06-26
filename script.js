@@ -44,3 +44,24 @@ window.onload = function () {
 
 };
 </script>
+const poojas = [
+  {
+    name: "Satyanarayan Puja",
+    img: "img/satyanarayan.jpg"
+  },
+  {
+    name: "Ganesh Puja",
+    img: "img/ganesh.jpg"
+  },
+  {
+    name: "Navgrah Puja",
+    img: "img/navgrah.jpg"
+  }
+];
+
+document.querySelectorAll(".pandit-card").forEach((card, i) => {
+  const img = card.querySelector("img");
+  if (img && poojas[i]) {
+    img.src = poojas[i].img;
+  }
+});
