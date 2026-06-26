@@ -1,36 +1,26 @@
-document.querySelector(".booking-form").addEventListener("submit", function(e) {
-  e.preventDefault();
+<script>
+window.onload = function () {
 
-  alert("🕉️ Your booking request has been submitted!\nPandit Guruji will contact you shortly.");
+  const buttons = document.getElementsByTagName("button");
 
-  window.open(
-    "https://wa.me/919876543210?text=Namaste%20Guruji,%20I%20would%20like%20to%20book%20a%20puja.",
-    "_blank"
-  );
-});
-  link.addEventListener("click", e => {
-    e.preventDefault();
+  for (let i = 0; i < buttons.length; i++) {
 
-    document.querySelector(
-      link.getAttribute("href")
-    ).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-});
-alert("🕉️ Your booking request has been submitted!\nPandit Guruji will contact you shortly.");
-window.open(
-  "https://wa.me/919876543210?text=Namaste%20Guruji,%20I%20would%20like%20to%20book%20a%20puja.",
-  "_blank"
-);
-document.querySelectorAll(".book-btn, .availability-btn").forEach(btn => {
-  btn.addEventListener("click", function () {
-    const bookingSection = document.querySelector("#booking");
+    if (buttons[i].innerText.includes("Check Availability")) {
 
-    if (bookingSection) {
-      bookingSection.scrollIntoView({
-        behavior: "smooth"
-      });
+      buttons[i].onclick = function () {
+
+        const card = this.closest(".pandit-card");
+
+        let name = "Pandit";
+        if (card && card.querySelector("h3")) {
+          name = card.querySelector("h3").innerText;
+        }
+
+        alert("🕉️ Checking availability for " + name +
+        "\n\n📅 We will confirm slots on WhatsApp soon!");
+      }
     }
-  });
-});
+  }
+
+};
+</script>
