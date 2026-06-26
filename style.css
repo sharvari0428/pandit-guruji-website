@@ -318,3 +318,41 @@ box-shadow:0 5px 20px rgba(0,0,0,0.2);
 .booking-form button:hover{
   transform:translateY(-3px);
 }
+.navbar{
+  backdrop-filter: blur(15px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+.hero h1,
+.services h2,
+.why-us h2,
+.testimonials h2,
+.gallery h2,
+.booking h2{
+  text-shadow: 0 3px 15px rgba(212,175,55,0.4);
+}
+html{
+  scroll-behavior: smooth;
+}
+.hero-content{
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+button{
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
