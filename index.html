@@ -263,15 +263,17 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-document.querySelectorAll(".card button")
+  document.querySelectorAll(".pandit-card button").forEach(btn => {
     btn.addEventListener("click", function () {
 
-      const card = this.closest(".pandit-card");
-      const name = card.querySelector("h3").innerText;
+      const name = this.closest(".pandit-card")
+                       .querySelector("h3").innerText;
 
-      alert("🕉️ Checking availability for " + name +
-      "\n\n📅 Slots will be shared on WhatsApp soon!");
-
+      alert(
+        "🕉️ Checking availability for " +
+        name +
+        "\n\n📅 Slots will be shared on WhatsApp soon!"
+      );
     });
   });
 
