@@ -768,3 +768,132 @@ button {
     font-size: 24px;
   }
 }
+/* =========================
+   PREMIUM FINAL UI UPGRADE
+   (Paste at bottom of CSS)
+========================= */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better section spacing */
+section {
+  padding: 80px 20px;
+}
+
+/* Premium body feel */
+body {
+  background: #fffaf3;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Unified card design */
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* Images inside cards */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Buttons premium look */
+button {
+  background: linear-gradient(45deg, #ff8c00, #d4af37);
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Cards container spacing */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* HERO upgrade */
+.hero {
+  background: linear-gradient(135deg, #fff7e6, #ffe0b2);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Headings consistency */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* WhatsApp floating button (IMPORTANT) */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Google map styling */
+.location iframe {
+  border-radius: 20px;
+  width: 100%;
+}
+
+/* Mobile responsive fix */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+}
