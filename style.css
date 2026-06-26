@@ -424,3 +424,6 @@ section{
   background:transparent;
   border:2px solid white;
 }
+section{
+  scroll-margin-top:100px;
+}
