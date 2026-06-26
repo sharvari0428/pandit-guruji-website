@@ -356,3 +356,8 @@ button:hover{
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
+.temple-line{
+  font-size:2rem;
+  margin-top:40px;
+  letter-spacing:20px;
+}
