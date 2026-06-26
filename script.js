@@ -9,3 +9,8 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
   });
 });
+alert("🕉️ Your booking request has been submitted!\nPandit Guruji will contact you shortly.");
+window.open(
+  "https://wa.me/919876543210?text=Namaste%20Guruji,%20I%20would%20like%20to%20book%20a%20puja.",
+  "_blank"
+);
