@@ -379,3 +379,163 @@ footer {
   pointer-events: auto;
   cursor: pointer;
 }
+/* =========================
+   THEME UPGRADE - TEAL & SAFFRON
+========================= */
+
+body{
+  background:radial-gradient(circle at top,#1c5d70,#0b2630);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+  background:rgba(15,76,92,0.9);
+  border-bottom:1px solid rgba(230,126,34,0.3);
+}
+
+nav a{
+  color:#fff;
+}
+
+nav a:hover{
+  color:#E67E22;
+}
+
+/* HERO */
+.hero{
+  background:
+    radial-gradient(circle at center,
+    rgba(230,126,34,0.15),
+    transparent 60%);
+}
+
+.hero h1{
+  color:#fff;
+}
+
+.hero p{
+  color:#e5e7eb;
+}
+
+/* HEADINGS */
+section h2,
+.pandits h2,
+.testimonials h2,
+.booking h2,
+.location h2{
+  color:#F4A261;
+}
+
+/* BUTTONS */
+button,
+.card button,
+.booking-form button,
+.pandit-card button{
+  background:linear-gradient(
+    45deg,
+    #E67E22,
+    #F4A261
+  );
+  color:#fff;
+}
+
+button:hover,
+.card button:hover,
+.booking-form button:hover,
+.pandit-card button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 25px rgba(230,126,34,0.4);
+}
+
+/* CARDS */
+.card,
+.booking-form,
+.stat-box,
+.gallery-card{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(230,126,34,0.2);
+  backdrop-filter:blur(12px);
+}
+
+.card:hover,
+.gallery-card:hover{
+  border-color:#E67E22;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* SERVICE IMAGES */
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:15px;
+  margin-bottom:15px;
+}
+
+/* INPUTS */
+.booking-form input,
+.booking-form select,
+.booking-form textarea,
+input,
+select,
+textarea{
+  background:rgba(0,0,0,0.25);
+  color:#fff;
+  border:1px solid rgba(230,126,34,0.25);
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus{
+  border-color:#E67E22;
+  box-shadow:0 0 12px rgba(230,126,34,0.3);
+}
+
+/* FOOTER */
+footer,
+.footer{
+  background:rgba(15,76,92,0.9);
+}
+
+/* LOCATION SECTION */
+.location{
+  padding:100px 8%;
+  text-align:center;
+}
+
+.location h2{
+  margin-bottom:40px;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+  nav{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+  }
+
+  .hero h1{
+    font-size:2rem;
+  }
+
+  .cards,
+  .grid,
+  .gallery-grid,
+  .stats{
+    grid-template-columns:1fr;
+  }
+
+  .buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .booking-form{
+    padding:25px;
+  }
+}
