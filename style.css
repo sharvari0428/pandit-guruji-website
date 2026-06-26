@@ -317,3 +317,69 @@ footer {
 .testimonials .card:hover{
   transform: translateY(-10px) scale(1.02);
 }
+/* =========================
+   PREMIUM BOOKING FORM
+========================= */
+
+.booking{
+  padding: 120px 8%;
+  text-align: center;
+  background: radial-gradient(circle at top, rgba(212,175,55,0.08), transparent 60%);
+}
+
+.booking h2{
+  color: #ffd700;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+
+.booking-form{
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: rgba(255,255,255,0.06);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212,175,55,0.2);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus{
+  border-color: #d4af37;
+  box-shadow: 0 0 10px rgba(212,175,55,0.2);
+}
+
+.booking-form button{
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #d4af37, #ffcc70);
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-form button:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
