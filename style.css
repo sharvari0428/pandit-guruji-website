@@ -1,1 +1,107 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
+body{
+  background:#fff8f0;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:rgba(128,0,32,0.9);
+  color:white;
+  position:fixed;
+  width:100%;
+}
+
+.logo{
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+.navbar ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+  background:linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ),
+    url("https://images.unsplash.com/photo-1606298855672-3efb63017be8?auto=format&fit=crop&w=1400&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
+}
+
+.hero h1{
+  font-size:3rem;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:1.1rem;
+  margin-bottom:30px;
+}
+
+.buttons button{
+  padding:14px 28px;
+  border:none;
+  border-radius:30px;
+  margin:10px;
+  background:#ff8c00;
+  color:white;
+  cursor:pointer;
+}
+
+.outline{
+  background:transparent;
+  border:2px solid white !important;
+}
+
+.services{
+  padding:100px 8%;
+  text-align:center;
+}
+
+.services h2{
+  color:#800020;
+  margin-bottom:50px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
