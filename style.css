@@ -680,3 +680,38 @@ footer,
     padding:25px;
   }
 }
+.navbar{
+  background: rgba(15,76,92,0.9) !important;
+  border-bottom: 1px solid rgba(230,126,34,0.3) !important;
+}
+
+body{
+  background: radial-gradient(circle at top,
+  #1c5d70,
+  #0b2630) !important;
+}
+
+.hero{
+  background:
+    radial-gradient(circle at center,
+    rgba(230,126,34,0.15),
+    transparent 60%) !important;
+}
+
+.hero h1{
+  color: #ffffff !important;
+}
+
+.hero p{
+  color: #e5e7eb !important;
+}
+
+button,
+.btn{
+  background: linear-gradient(
+    45deg,
+    #E67E22,
+    #F4A261
+  ) !important;
+  color: white !important;
+}
