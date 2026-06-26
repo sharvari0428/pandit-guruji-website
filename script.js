@@ -22,20 +22,25 @@ window.onload = function () {
     }
   }
 
+  // ✅ IMAGE FIX (inside onload)
+
+  const images = [
+    "img/pooja1.jpg",
+    "img/pooja2.jpg",
+    "img/pooja3.jpg"
+  ];
+
+  let savedImage = localStorage.getItem("poojaImage");
+
+  if (!savedImage) {
+    savedImage = images[Math.floor(Math.random() * images.length)];
+    localStorage.setItem("poojaImage", savedImage);
+  }
+
+  const img = document.querySelector(".pooja-img");
+  if (img) {
+    img.src = savedImage;
+  }
+
 };
 </script>
-const images = [
-  "img/pooja1.jpg",
-  "img/pooja2.jpg",
-  "img/pooja3.jpg"
-];
-
-let savedImage = localStorage.getItem("poojaImage");
-
-if (!savedImage) {
-  // first time → pick random image
-  savedImage = images[Math.floor(Math.random() * images.length)];
-  localStorage.setItem("poojaImage", savedImage);
-}
-
-document.querySelector(".pooja-img").src = savedImage;
