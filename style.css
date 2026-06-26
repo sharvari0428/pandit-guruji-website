@@ -405,3 +405,22 @@ section{
   font-weight:700;
   color:#ffd700;
 }
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  border-radius:30px;
+  background:#ff8c00;
+  color:white;
+  text-decoration:none;
+  margin:10px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.btn.outline{
+  background:transparent;
+  border:2px solid white;
+}
