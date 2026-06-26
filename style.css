@@ -151,3 +151,26 @@ box-shadow:0 5px 20px rgba(0,0,0,0.2);
 .card:hover{
   transform:translateY(-12px) scale(1.03);
 }
+.hero-content{
+  max-width:800px;
+}
+
+.hero h1{
+  font-size:3.5rem;
+  line-height:1.2;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:1.2rem;
+  margin-bottom:30px;
+  color:#f3f3f3;
+}
+
+.buttons button{
+  transition:0.3s;
+}
+
+.buttons button:hover{
+  transform:translateY(-3px);
+}
