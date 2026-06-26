@@ -193,3 +193,14 @@ box-shadow:0 5px 20px rgba(0,0,0,0.2);
 .testimonials .card span{
   color:#666;
 }
+.footer{
+  background:#800020;
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+
+.footer p{
+  margin:10px 0;
+  opacity:0.9;
+}
