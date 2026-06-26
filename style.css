@@ -372,3 +372,36 @@ body{
 .card button:hover{
   transform:translateY(-3px);
 }
+.booking{
+  background:linear-gradient(
+    to bottom,
+    #fff8f0,
+    #ffffff
+  );
+}
+.gallery-card img{
+  transition:0.4s;
+}
+
+.gallery-card:hover img{
+  transform:scale(1.08);
+}
+section{
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+.logo{
+  font-size:1.7rem;
+  font-weight:700;
+  color:#ffd700;
+}
