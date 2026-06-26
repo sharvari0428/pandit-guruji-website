@@ -174,3 +174,22 @@ box-shadow:0 5px 20px rgba(0,0,0,0.2);
 .buttons button:hover{
   transform:translateY(-3px);
 }
+.testimonials{
+  padding:100px 8%;
+  text-align:center;
+  background:#ffffff;
+}
+
+.testimonials h2{
+  color:#800020;
+  margin-bottom:50px;
+}
+
+.testimonials .card p{
+  font-style:italic;
+  margin-bottom:20px;
+}
+
+.testimonials .card span{
+  color:#666;
+}
