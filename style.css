@@ -361,3 +361,14 @@ button:hover{
   margin-top:40px;
   letter-spacing:20px;
 }
+body{
+  padding-top:80px;
+}
+.card button{
+  background:linear-gradient(45deg,#ff8c00,#d4af37);
+  font-weight:600;
+}
+
+.card button:hover{
+  transform:translateY(-3px);
+}
