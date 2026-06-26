@@ -715,3 +715,42 @@ button,
   ) !important;
   color: white !important;
 }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fffaf3;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+button {
+  background: linear-gradient(45deg, #ff8c00, #d4af37);
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
