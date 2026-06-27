@@ -2,146 +2,145 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins, sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: #fff8e7;
+  background: #FFF8E7;
   color: #333;
 }
 
+/* Navbar */
 nav {
-  background: #8b4513;
-  color: white;
-  padding: 20px 8%;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  padding: 18px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
 }
-
-nav ul {
+nav {
+  background: linear-gradient(45deg, #800000, #E67E22);
+  padding: 18px 8%;
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #d4af37;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
-nav ul li {
-  margin-left: 25px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
+/* Hero */
 .hero {
-  min-height: 90vh;
-  background: linear-gradient(rgba(0,0,0,.5),
-  rgba(0,0,0,.5)),
-  url("https://images.unsplash.com/photo-1606293926075-69a8b3f8f7b4?auto=format&fit=crop&w=1500&q=80");
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=1200&q=80');
   background-size: cover;
   background-position: center;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 120px 20px;
+  color: white;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  color: #d4af37;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  margin: 20px 0;
+  font-size: 1.1rem;
+  color: #ddd;
 }
 
-button {
-  background: linear-gradient(45deg,
-  #ff8c00, #d4af37);
+.hero button {
+  margin-top: 30px;
+  padding: 14px 30px;
   border: none;
-  padding: 12px 25px;
   border-radius: 30px;
+  background: linear-gradient(45deg, #ff8c00, #d4af37);
   color: white;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.services,
-.about,
-.testimonials,
-.contact {
-  padding: 80px 10%;
+/* Services */
+.services {
+  padding: 70px 8%;
+}
+
+.services h2 {
   text-align: center;
+  color: #d4af37;
+  margin-bottom: 50px;
+  font-size: 2rem;
 }
 
 .cards {
   display: grid;
-  grid-template-columns:
-  repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
 }
 
 .card {
-  background: white;
-  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,.1);
-  transition: .3s;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(212,175,55,0.3);
 }
 
 .card img {
   width: 100%;
-  height: 220px;
+  height: 230px;
   object-fit: cover;
 }
 
-.card h3,
-.card p,
+.card-content {
+  padding: 25px;
+}
+
+.card h3 {
+  color: #d4af37;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.card p {
+  color: #555;
+    line-height: 1.6;
+}
+
 .card button {
-  margin: 20px;
-}
-
-.review {
-  background: white;
-  padding: 30px;
-  margin: 20px auto;
-  max-width: 500px;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,.1);
-}
-
-.contact {
-  background: #8b4513;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff8c00, #d4af37);
   color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
-
-.contact p {
-  margin: 15px 0;
-}
-
-.whatsapp {
+  .whatsapp {
   position: fixed;
-  right: 20px;
   bottom: 20px;
+  right: 20px;
   width: 60px;
   height: 60px;
-  background: #25d366;
+  background: #25D366;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
   text-decoration: none;
-  font-size: 28px;
-}
- 
+  z-index: 1000;
+  }
