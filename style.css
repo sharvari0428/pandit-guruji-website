@@ -1,916 +1,121 @@
-/* =========================
-   PANDIT GURUJI PREMIUM UI
-   MAROON + GOLD THEME
-========================= */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top, #3b0a0a, #120202);
-  color: #fff;
-  overflow-x: hidden;
+  background: linear-gradient(180deg, #071320, #0b1f33);
+  color: white;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* Navbar */
 nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  background: rgba(15, 76, 92, 0.9);
-  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  padding: 18px 8%;
   display: flex;
   justify-content: space-between;
-  padding: 15px 40px;
-  border-bottom: 1px solid rgba(230,126,34,0.3);
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 12px;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #E67E22;
-}
-
-/* =========================
-   HERO SECTION
-========================= */
-.hero {
-  height: 100vh;
-  display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.logo {
+  color: #d4af37;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
   text-align: center;
-  padding: 0 20px;
-  background: radial-gradient(circle at center, rgba(212,175,55,0.15), transparent 60%);
+  padding: 80px 20px;
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  color: #f5e6c8;
-  text-shadow: 0 0 20px rgba(212,175,55,0.4);
+  color: #d4af37;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  margin-top: 15px;
   font-size: 1.1rem;
   color: #ddd;
 }
 
-/* =========================
-   BUTTONS
-========================= */
-button {
-  background: linear-gradient(45deg, #d4af37, #ffcc70);
+.hero button {
+  margin-top: 30px;
+  padding: 14px 30px;
   border: none;
-  padding: 12px 22px;
-  margin-top: 20px;
   border-radius: 30px;
-  font-weight: 600;
+  background: linear-gradient(45deg, #ff8c00, #d4af37);
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 0 15px rgba(212,175,55,0.2);
 }
 
-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(212,175,55,0.5);
+/* Services */
+.services {
+  padding: 70px 8%;
 }
 
-/* =========================
-   SECTIONS
-========================= */
-section {
-  padding: 80px 10%;
+.services h2 {
+  text-align: center;
+  color: #d4af37;
+  margin-bottom: 50px;
+  font-size: 2rem;
 }
 
-section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  margin-bottom: 30px;
-  color: #E67E22;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
 }
 
-/* =========================
-   CARDS (GLASSMORPHISM)
-========================= */
 .card {
   background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(212,175,55,0.2);
-  border-radius: 16px;
-  padding: 20px;
-  backdrop-filter: blur(10px);
-  transition: 0.4s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  border-color: #d4af37;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
-/* =========================
-   GRID LAYOUTS
-========================= */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-/* =========================
-   INPUT FIELDS
-========================= */
-input, select, textarea {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  border-radius: 10px;
   border: 1px solid rgba(212,175,55,0.3);
-  background: rgba(0,0,0,0.3);
-  color: #fff;
-  outline: none;
-}
-
-input:focus, textarea:focus, select:focus {
-  border-color: #d4af37;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: rgba(0,0,0,0.4);
-  border-top: 1px solid rgba(212,175,55,0.2);
-  margin-top: 50px;
-}
-
-/* =========================
-   ANIMATIONS
-========================= */
-.fade-in {
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-/* =========================
-   PREMIUM PUJA CARDS UPGRADE
-========================= */
-
-.cards .card{
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(212,175,55,0.2);
-  color: #fff;
-  transition: 0.4s;
-  position: relative;
+  border-radius: 25px;
   overflow: hidden;
-}
-
-.cards .card h3{
-  color: #ffd700;
-  margin-bottom: 10px;
-  font-family: 'Playfair Display', serif;
-}
-
-.cards .card p{
-  color: #ddd;
-  font-size: 0.95rem;
-}
-
-.cards .card button{
-  margin-top: 15px;
-  background: linear-gradient(45deg, #d4af37, #ffcc70);
-  color: #000;
-  font-weight: 600;
-}
-
-.cards .card:hover{
-  transform: translateY(-12px) scale(1.03);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-  border-color: #d4af37;
-}
-
-/* glow effect */
-
-
-.cards .card:hover::before{
-  opacity: 1;
-}
-/* =========================
-   PANDIT PROFILES SECTION
-========================= */
-
-.pandits{
-  padding: 100px 8%;
-  text-align: center;
-  background: radial-gradient(circle at top, rgba(212,175,55,0.08), transparent 60%);
-}
-
-.pandits h2{
-  color: #ffd700;
-  margin-bottom: 50px;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-}
-
-.pandit-card{
-  text-align: left;
-  padding: 30px;
-}
-
-.pandit-card h3{
-  color: #ffd700;
-  margin-bottom: 10px;
-}
-
-.pandit-card p{
-  color: #ddd;
-  margin: 6px 0;
-}
-
-.pandit-card button{
-  margin-top: 15px;
-  width: 100%;
-  background: linear-gradient(45deg, #ff8c00, #d4af37);
-  font-weight: 600;
-}
-
-.pandit-card:hover{
-  transform: translateY(-12px) scale(1.03);
-}
-/* =========================
-   CUSTOMER REVIEWS SECTION
-========================= */
-
-.testimonials{
-  padding: 100px 8%;
-  text-align: center;
-  background: radial-gradient(circle at bottom, rgba(212,175,55,0.08), transparent 60%);
-}
-
-.testimonials h2{
-  color: #ffd700;
-  margin-bottom: 50px;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-}
-
-.testimonials .card{
-  text-align: left;
-  padding: 30px;
-  position: relative;
-}
-
-.testimonials .card p{
-  font-style: italic;
-  color: #ddd;
-  margin-bottom: 15px;
-  font-size: 1rem;
-}
-
-.testimonials .card span{
-  color: #ffd700;
-  font-weight: 600;
-}
-
-.testimonials .card::before{
-  content: "⭐";
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 1.5rem;
-  opacity: 0.6;
-}
-
-.testimonials .card:hover{
-  transform: translateY(-10px) scale(1.02);
-}
-/* =========================
-   PREMIUM BOOKING FORM
-========================= */
-
-.booking{
-  padding: 120px 8%;
-  text-align: center;
-  background: radial-gradient(circle at top, rgba(212,175,55,0.08), transparent 60%);
-}
-
-.booking h2{
-  color: #ffd700;
-  margin-bottom: 40px;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-}
-
-.booking-form{
-  max-width: 650px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  background: rgba(255,255,255,0.06);
-  padding: 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(212,175,55,0.2);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form textarea{
-  padding: 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(0,0,0,0.3);
-  color: #fff;
-  outline: none;
-  transition: 0.3s;
-}
-
-.booking-form input:focus,
-.booking-form select:focus,
-.booking-form textarea:focus{
-  border-color: #d4af37;
-  box-shadow: 0 0 10px rgba(212,175,55,0.2);
-}
-
-.booking-form button{
-  padding: 16px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(45deg, #d4af37, #ffcc70);
-  color: #000;
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.booking-form button:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-.pandit-card button {
-  position: relative;
-  z-index: 10;
-  pointer-events: auto;
-  cursor: pointer;
-}
-/* =========================
-   THEME UPGRADE - TEAL & SAFFRON
-========================= */
-
-body{
-  background:radial-gradient(circle at top,#1c5d70,#0b2630);
-  color:#fff;
-  overflow-x:hidden;
-}
-
-/* NAVBAR */
-nav{
-  background:rgba(15,76,92,0.9);
-  border-bottom:1px solid rgba(230,126,34,0.3);
-}
-
-nav a{
-  color:#fff;
-}
-
-nav a:hover{
-  color:#E67E22;
-}
-
-/* HERO */
-.hero{
-  background:
-    radial-gradient(circle at center,
-    rgba(230,126,34,0.15),
-    transparent 60%);
-}
-
-.hero h1{
-  color:#fff;
-}
-
-.hero p{
-  color:#e5e7eb;
-}
-
-/* HEADINGS */
-section h2,
-.pandits h2,
-.testimonials h2,
-.booking h2,
-.location h2{
-  color:#F4A261;
-}
-
-/* BUTTONS */
-button,
-.card button,
-.booking-form button,
-.pandit-card button{
-  background:linear-gradient(
-    45deg,
-    #E67E22,
-    #F4A261
-  );
-  color:#fff;
-}
-
-button:hover,
-.card button:hover,
-.booking-form button:hover,
-.pandit-card button:hover{
-  transform:translateY(-3px);
-  box-shadow:0 0 25px rgba(230,126,34,0.4);
-}
-
-/* CARDS */
-.card,
-.booking-form,
-.stat-box,
-.gallery-card{
-  background:rgba(255,255,255,0.08);
-  border:1px solid rgba(230,126,34,0.2);
-  backdrop-filter:blur(12px);
-}
-
-.card:hover,
-.gallery-card:hover{
-  border-color:#E67E22;
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
-}
-
-/* SERVICE IMAGES */
-.card img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-  border-radius:15px;
-  margin-bottom:15px;
-}
-
-/* INPUTS */
-.booking-form input,
-.booking-form select,
-.booking-form textarea,
-input,
-select,
-textarea{
-  background:rgba(0,0,0,0.25);
-  color:#fff;
-  border:1px solid rgba(230,126,34,0.25);
-}
-
-.booking-form input:focus,
-.booking-form select:focus,
-.booking-form textarea:focus{
-  border-color:#E67E22;
-  box-shadow:0 0 12px rgba(230,126,34,0.3);
-}
-
-/* FOOTER */
-footer,
-.footer{
-  background:rgba(15,76,92,0.9);
-}
-
-/* LOCATION SECTION */
-.location{
-  padding:100px 8%;
-  text-align:center;
-}
-
-.location h2{
-  margin-bottom:40px;
-}
-
-/* MOBILE */
-@media (max-width:768px){
-
-  nav{
-    flex-direction:column;
-    gap:15px;
-    padding:20px;
-  }
-
-  .hero h1{
-    font-size:2rem;
-  }
-
-  .cards,
-  .grid,
-  .gallery-grid,
-  .stats{
-    grid-template-columns:1fr;
-  }
-
-  .buttons{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
-
-  .booking-form{
-    padding:25px;
-  }
-}
-/* =========================
-   TEAL + SAFFRON THEME OVERRIDE
-========================= */
-
-body{
-  background:radial-gradient(circle at top,#1c5d70,#0b2630) !important;
-  color:#fff;
-}
-
-/* NAVBAR */
-nav{
-  background:rgba(15,76,92,0.9) !important;
-  border-bottom:1px solid rgba(230,126,34,0.3) !important;
-}
-
-nav a:hover{
-  color:#E67E22 !important;
-}
-
-/* HERO */
-.hero{
-  background:
-  radial-gradient(circle at center,
-  rgba(230,126,34,0.15),
-  transparent 60%) !important;
-}
-
-.hero h1{
-  color:#fff !important;
-  text-shadow:0 0 20px rgba(230,126,34,0.35) !important;
-}
-
-.hero p{
-  color:#e5e7eb !important;
-}
-
-/* HEADINGS */
-section h2,
-.pandits h2,
-.testimonials h2,
-.booking h2,
-.location h2,
-.cards .card h3,
-.pandit-card h3,
-.testimonials .card span{
-  color:#F4A261 !important;
-}
-
-/* BUTTONS */
-button,
-.card button,
-.booking-form button,
-.pandit-card button{
-  background:linear-gradient(
-    45deg,
-    #E67E22,
-    #F4A261
-  ) !important;
-  color:#fff !important;
-}
-
-button:hover,
-.card button:hover,
-.booking-form button:hover,
-.pandit-card button:hover{
-  box-shadow:0 0 25px rgba(230,126,34,0.4) !important;
-}
-
-/* CARDS */
-.card,
-.booking-form,
-.stat-box,
-.gallery-card{
-  background:rgba(255,255,255,0.08) !important;
-  border:1px solid rgba(230,126,34,0.2) !important;
-  backdrop-filter:blur(12px);
-}
-
-.card:hover,
-.gallery-card:hover{
-  border-color:#E67E22 !important;
-}
-
-/* INPUTS */
-input,
-select,
-textarea{
-  border:1px solid rgba(230,126,34,0.25) !important;
-}
-
-input:focus,
-select:focus,
-textarea:focus{
-  border-color:#E67E22 !important;
-}
-
-/* FOOTER */
-footer,
-.footer{
-  background:rgba(15,76,92,0.9) !important;
-}
-
-/* SERVICE IMAGES */
-.card img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-  border-radius:15px;
-  margin-bottom:15px;
-}
-
-/* LOCATION */
-.location{
-  padding:100px 8%;
-  text-align:center;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-
-  nav{
-    flex-direction:column;
-    gap:15px;
-    padding:20px;
-  }
-
-  .hero h1{
-    font-size:2rem;
-  }
-
-  .cards,
-  .grid,
-  .gallery-grid,
-  .stats{
-    grid-template-columns:1fr;
-  }
-
-  .booking-form{
-    padding:25px;
-  }
-}
-.navbar{
-  background: rgba(15,76,92,0.9) !important;
-  border-bottom: 1px solid rgba(230,126,34,0.3) !important;
-}
-
-body{
-  background: radial-gradient(circle at top,
-  #1c5d70,
-  #0b2630) !important;
-}
-
-.hero{
-  background:
-    radial-gradient(circle at center,
-    rgba(230,126,34,0.15),
-    transparent 60%) !important;
-}
-
-.hero h1{
-  color: #ffffff !important;
-}
-
-.hero p{
-  color: #e5e7eb !important;
-}
-
-button,
-.btn{
-  background: linear-gradient(
-    45deg,
-    #E67E22,
-    #F4A261
-  ) !important;
-  color: white !important;
-}
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background: #fffaf3;
-  color: #333;
-}
-
-section {
-  padding: 60px 20px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  width: 250px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  backdrop-filter: blur(10px);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(212,175,55,0.3);
 }
 
-button {
-  background: linear-gradient(45deg, #ff8c00, #d4af37);
-  border: none;
-  padding: 10px 15px;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-}
-/* =========================
-   PREMIUM FINAL UI UPGRADE
-   (Paste at bottom of CSS)
-========================= */
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Better section spacing */
-section {
-  padding: 80px 20px;
-}
-
-/* Premium body feel */
-body {
-  background: #fffaf3;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Unified card design */
-.card {
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
-}
-
-/* Images inside cards */
 .card img {
   width: 100%;
-  height: 180px;
+  height: 230px;
   object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
-/* Buttons premium look */
-button {
-  background: linear-gradient(45deg, #ff8c00, #d4af37);
+.card-content {
+  padding: 25px;
+}
+
+.card h3 {
+  color: #d4af37;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.card p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.card button {
+  margin-top: 20px;
+  padding: 12px 25px;
   border: none;
-  padding: 10px 16px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff8c00, #d4af37);
   color: white;
-  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
-  font-weight: 600;
-  transition: 0.3s;
 }
-
-button:hover {
-  transform: scale(1.05);
-}
-
-/* Cards container spacing */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* HERO upgrade */
-.hero {
-  background: linear-gradient(135deg, #fff7e6, #ffe0b2);
-  padding: 100px 20px;
-  text-align: center;
-}
-
-/* Headings consistency */
-h1, h2, h3 {
-  font-weight: 600;
-}
-
-/* WhatsApp floating button (IMPORTANT) */
-.whatsapp-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  z-index: 1000;
-  transition: 0.3s;
-  text-decoration: none;
-}
-
-.whatsapp-btn:hover {
-  transform: scale(1.1);
-}
-
-/* Google map styling */
-.location iframe {
-  border-radius: 20px;
-  width: 100%;
-}
-
-/* Mobile responsive fix */
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  section {
-    padding: 60px 15px;
-  }
-}
-.card-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.card {
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
+  
+ 
