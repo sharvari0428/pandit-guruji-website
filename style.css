@@ -6,8 +6,8 @@
 }
 
 body {
-  background: linear-gradient(180deg, #071320, #0b1f33);
-  color: white;
+  background: #FFF8E7;
+  color: #333;
 }
 
 /* Navbar */
@@ -19,7 +19,13 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
+nav {
+  background: linear-gradient(45deg, #800000, #E67E22);
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo {
   color: #d4af37;
   font-size: 1.7rem;
@@ -28,8 +34,14 @@ nav {
 
 /* Hero */
 .hero {
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  padding: 80px 20px;
+  padding: 120px 20px;
+  color: white;
 }
 
 .hero h1 {
@@ -103,8 +115,8 @@ nav {
 }
 
 .card p {
-  color: #ddd;
-  line-height: 1.6;
+  color: #555;
+    line-height: 1.6;
 }
 
 .card button {
@@ -117,5 +129,19 @@ nav {
   font-weight: bold;
   cursor: pointer;
 }
-  
+  .whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-decoration: none;
+  z-index: 1000;
+  }
  
