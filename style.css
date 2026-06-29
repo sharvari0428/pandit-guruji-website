@@ -256,5 +256,59 @@ footer { background:var(--stone); padding:64px 5vw 40px; color:rgba(255,255,255,
   .stat-item { min-width:120px; }
   .hero-trust { gap:1.5rem; }
 }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #081827;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.3);
+}
+
+.service-card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.service-card:hover .service-card-img {
+  transform: scale(1.08);
+}
+
+.service-card-body {
+  padding: 20px;
+}
+
+.service-card h3 {
+  color: #d4af37;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.service-card-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 22px;
+  background: #d4af37;
+  color: #081827;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
 CSSEOF
 echo "CSS done"
